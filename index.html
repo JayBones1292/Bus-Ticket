@@ -11,7 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       text-align: center;
       background-color: white;
-      padding-bottom: 70px; /* prevent footer from overlapping content */
+      padding-bottom: 70px;
     }
     img {
       max-width: 100%;
@@ -92,7 +92,7 @@
       document.getElementById('bar1').style.opacity = visible ? 1 : 0;
       document.getElementById('bar2').style.opacity = visible ? 1 : 0;
       document.getElementById('bar3').style.opacity = visible ? 1 : 0;
-    }, 800);
+    }, 667); // 1.2x faster blinking
 
     let countdownTime = 3600;
     function updateCountdown() {
